@@ -22,7 +22,7 @@
       div(v-html="description").caption.grey--text
     v-card-text.text-xs-center
       div.green--text.headline.mb-4 {{ priceRange }}
-      v-btn(block color="primary" depressed large).my-0 Details
+      v-btn(block color="primary" v-text="$t('Vuetify.Store.details')" depressed large).my-0
 </template>
 
 <script>
