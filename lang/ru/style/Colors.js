@@ -1,18 +1,18 @@
 export default {
   header: 'Цвета',
-  headerText: 'Из коробки вы получаете доступ ко всем цветам в [Material Design спецификации](https://material.io/guidelines/style/color.html) через **stylus** и **javascript**. Эти значения могут использоваться в ваших таблицах стилей, ваших файлах компонентов и фактических компонентах через систему **color class**.',
+  headerText: 'Из коробки Вы получаете доуступ ко всем цветам по [спецификации Material Design](https://material.io/guidelines/style/color.html) посредством **stylus** и **javascript**. Эти значения могут использоваться внутри Ваших файлов разметки, в ваших собственных компонентах и в предустановленных компонентах с помощью системы **цвет класс**.',
   classesHeader: 'Классы',
-  classesText: 'Каждый цвет из спецификации преобразуется в **фоновый** и **текстовый** вариант для стилизации в вашем приложении через класс, например: `<div class="red">` или `<span class="red--text">`. Эти цвета классов определены [здесь](https://github.com/vuetifyjs/vuetify/blob/master/src/stylus/settings/_colors.styl).',
-  classesText2: 'Цвет текста также поддерживают **затемненные** и **осветленные** варианты с использованием `text--{lighten|darken}--{n}`',
-  javascriptPackHeader: 'Цветовой пакет Javascript',
-  javascriptPackText: 'Vuetify имеет дополнительный пакет цветов javascript, который вы можете импортировать и использовать в своем приложении. Это также можно использовать для определения темы ваших приложений.',
-  stylusPackHeader: 'Цветовой пакет Stylus',
-  stylusPackText: 'Хотя удобно, цветовой пакет увеличивает размер экспорта css на ~ 30 кб. В некоторых проектах могут потребоваться только классы по умолчанию, созданные во время выполнения из бутстрапа Vuetify. Чтобы отключить эту функцию, вам придется _вручную_ импортировать и создать основной файл **stylus**. Для этого потребуется [stylus loader](https://github.com/shama/stylus-loader) и запись файла .styl .',
-  stylusPackText2: 'Затем созданный файл `main.styl` должен быть включен в ваш проект.',
-  alert: 'Вы **должны** сконфигурировать свою webpack настройку для использования `stylus`. Если вы используете [готовый шаблон](/get-started/quick-start#new-applications), это уже будет сделано для вас.',
-  stylusPackText3: 'Это также можно сделать в основном файле **App.vue**. Имейте в виду, что в зависимости от вашей настройки проекта это _будет_ увеличивать время сборки, так как каждый раз, когда ваш файл входа обновляется, файлы stylus будут повторно сгенерированы.',
-  colorHeader: 'Material цвета',
-  colorText: 'Ниже представлен список цветовой палитры Material design, сгруппированный по основному цвету',
+  classesText: 'Каждый цвет спецификации сконвертирован в **background** и **text** варианты, что позволяет удобно стилизовать Ваше приложение через добавление соответствующих классов. Например, `<div class="red">` или `<span class="red--text">`. Цвета этих классов определены [здесь](https://github.com/vuetifyjs/vuetify/blob/master/src/stylus/settings/_colors.styl).',
+  classesText2: 'Для затемнения или осветления текста используются **darken** и **lighten** соответственно. Например, `text--{lighten|darken}-{n}`',
+  javascriptPackHeader: 'Набор цветов в Javascript',
+  javascriptPackText: 'Vuetify имеет дополнительный набор цветов javascript, который Вы можете импортировать и использовать в своем приложении. Здесь же можно переопределить тему Вашего приложения.',
+  stylusPackHeader: 'Набор цветов в Stylus',
+  stylusPackText: 'Несмотря на все удобства, набор цветов увеличивает размер итогового css-файла примерно на 30 килобайт. Некоторым проектам вполне достаточно стандартных классов, созданных в рантайме из Vuetify-бутстрапа. Для этого нужно _вручную_ импортировать и собирать основной **stylus** файл. Потребуется [stylus loader](https://github.com/shama/stylus-loader) и точка входа `.styl`.',
+  stylusPackText2: 'Создайте файл `main.styl` и подключите его к проекту.',
+  alert: 'Вы **должны** [настроить](https://github.com/shama/stylus-loader) webpack, чтобы использовать `stylus`. Если для работы Вы используете один из [готовых шаблонов](/getting-started/quick-start#new-applications), то дополнительно делать ничего не нужно.',
+  stylusPackText3: 'Это можно сделать и внутри главного **App.vue** файла. Помните: в зависимости от настроек Вашего проекта время сборки _будет увеличиваться_, т.к. каждый раз, когда основной файл будет изменен, остальные stylus-файлы будут перегенерированы.',
+  colorHeader: 'Цвета Material Design',
+  colorText: 'Ниже представлен список цветовой палитры Material Design, сгруппированный по основному цвету',
   toc: [
     {
       text: 'Введение',
@@ -23,16 +23,16 @@ export default {
       href: 'classes'
     },
     {
-      text: 'Цветовой пакет Javascript',
+      text: 'Набор цветов в Javascript',
       href: 'javascript-color-pack'
     },
     {
-      text: 'Цветовой пакет Stylus',
+      text: 'Набор цветов в Stylus',
       href: 'stylus-color-pack'
     },
     {
-      text: 'Material цвета',
-      href: 'introduction'
+      text: 'Цвета Material Design',
+      href: 'material-colors'
     }
   ]
 }
